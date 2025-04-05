@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile image_upscaler_Win7_full_fixed.py
 
     - name: Upload exe
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: built-exe
         path: dist/image_upscaler_Win7.exe
